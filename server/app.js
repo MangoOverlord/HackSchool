@@ -10,6 +10,8 @@ server.listen(port, '0.0.0.0', () => {
 });
 
 // Access example.com/
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
     res.send("I love HackSchool.");
 });
